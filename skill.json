@@ -1,0 +1,31 @@
+{
+  "name": "genpark-pharma-specialized-document-rag-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Domain-specialized pharmaceutical document RAG and clinical trial compliance search.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "pharma-ai",
+    "clinical-trial",
+    "compliance",
+    "ph-july23"
+  ],
+  "inputs": {
+    "query": {
+      "type": "string"
+    },
+    "clinical_docs": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "retrieved_evidence": {
+      "type": "array"
+    },
+    "compliance_flag": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
